@@ -1,6 +1,6 @@
 {
   "name": "@team-decorate/vue-line-login",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "vue line login support",
   "main": "dist/vue-line-login.common.js",
   "unpkg": "dist/vue-line-login.umd.js",
@@ -19,7 +19,8 @@
     "url": "git+https://github.com/decorate/vue-line-login.git"
   },
   "keywords": [
-    "vue", "line login"
+    "vue",
+    "line login"
   ],
   "author": "mitu2687",
   "license": "MIT",
