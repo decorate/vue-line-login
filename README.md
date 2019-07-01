@@ -1,28 +1,43 @@
 
-## npm-package-base
+## vue-line-login
 
 ### Installation
 
 With npm:
 
-    git clone git@github.com:decorate/npm-package-base.git
+    npm install @team-decorate/vue-line-login
     
 ### Replace
 
-package.json:
-
-    name,main,unpkg,repository,author,keywords
-    peerDependencies = externalLibrary
+    cp .env.sample .env
+    
     
 ### Usage
 
-    npm install
-    npm run serve
-    
-### Build
-    
-    npm run build
+```vue
 
-### Test
+<template>
+    <line-login-button 
+    @result="result" 
+    add-friend 
+    friend-required></line-login-button>
+</template>
 
-    npm run test
+<script>
+import '@team-decorate/dist/vue-line-login.css'
+import VueLineLogin from '@team-decorate/vue-line-login'
+
+export default {
+    components: {
+        VueLineLogin
+    },
+    
+    methods: {
+        result(res) {
+            console.log(res)
+        }
+    }
+}
+</script>
+
+```
