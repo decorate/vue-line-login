@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-      <line-login-button @result="result" add-friend friend-required></line-login-button>
+      <line-login-button
+              client-id="1592791378"
+              callback-uri="http://localhost:8081"
+              @result="result"
+              add-friend
+              friend-required></line-login-button>
   </div>
 </template>
 

@@ -25,6 +25,16 @@
         },
 
         props: {
+            clientId: {
+                type: String,
+                require: true
+            },
+
+            callbackUri: {
+                type: String,
+                require: true
+            },
+
             addFriend: {
                 type: Boolean,
                 require: false
@@ -70,8 +80,8 @@
                 const url = 'https://access.line.me/oauth2/v2.1/authorize'
                 let params = {
                     response_type: 'code',
-                    client_id: process.env.VUE_APP_LINE_CLIENT_ID,
-                    redirect_uri: process.env.VUE_APP_LINE_CALLBACK_URL,
+                    client_id: this.clientId,
+                    redirect_uri: this.callbackUri,
                     state: Math.random().toString(32).substring(2),
                     scope: 'openid profile',
                 }
