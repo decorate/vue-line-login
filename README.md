@@ -7,10 +7,6 @@ With npm:
 
     npm install @team-decorate/vue-line-login
     
-### Replace
-
-    cp .env.sample .env
-    
     
 ### Usage
 
