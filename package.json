@@ -1,6 +1,6 @@
 {
   "name": "@team-decorate/vue-line-login",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "vue line login support",
   "main": "dist/vue-line-login.common.js",
   "unpkg": "dist/vue-line-login.umd.js",
