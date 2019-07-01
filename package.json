@@ -1,0 +1,60 @@
+{
+  "name": "@team-decorate/vue-line-login",
+  "version": "1.0.0",
+  "description": "vue line login support",
+  "main": "dist/vue-line-login.common.js",
+  "unpkg": "dist/vue-line-login.umd.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build src/index.js --target lib --name vue-line-login",
+    "test": "vue-cli-service test:unit tests/",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decorate/vue-line-login.git"
+  },
+  "keywords": [
+    "vue", "line login"
+  ],
+  "author": "mitu2687",
+  "license": "MIT",
+  "peerDependencies": {
+    "axios": "*"
+  },
+  "devDependencies": {
+    "@team-decorate/alcjs": "^1.1.1",
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-unit-jest": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/test-utils": "^1.0.0-beta.24",
+    "axios": "^0.18.1",
+    "axios-mock-adapter": "^1.13.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "linq": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10",
+    "vuex": "^3.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "query-string": "^6.8.1"
+  },
+  "env": {
+    "node": true
+  }
+}

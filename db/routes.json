@@ -1,0 +1,3 @@
+{
+  "/api/test/:table": "/:table"
+}

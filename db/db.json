@@ -1,0 +1,16 @@
+{
+  "place": [
+    {"id": 1, "name": "北海道"},
+    {"id": 2, "name": "青森"}
+  ],
+
+  "user.type": [
+    {"value": 0, "text": "user"},
+    {"value": 1, "text": "cast"}
+  ],
+
+  "level": [
+    {"id": 1, "name": "ゴールド"},
+    {"id": 2, "name": "シルバー"}
+  ]
+}
