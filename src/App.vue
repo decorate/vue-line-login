@@ -1,9 +1,9 @@
 <template>
   <div id="app">
       <line-login-button
-              client-id="1592791378"
-              client-secret="d533452cc07fa8795f5fffa86eb49479"
-              callback-uri="http://localhost:8081"
+              :client-id="clientId"
+              :client-secret="clientSecret"
+              :callback-uri="callbackUri"
               @result="result"
               add-friend
               friend-required></line-login-button>
@@ -14,6 +14,20 @@
     import LineLoginButton from './components/LineLoginButton'
 
     export default {
+        data() {
+            return {
+                clientId: '',
+                clientSecret: '',
+                callbackUri: ''
+            }
+        },
+
+        created() {
+            this.clientId = process.env.VUE_APP_LINE_CLIENT_ID
+            this.clientSecret = process.env.VUE_APP_LINE_CLIENT_SECRET
+            this.callbackUri = process.env.VUE_APP_LINE_CALLBACK_URL
+        },
+
         components: {
             LineLoginButton
         },
