@@ -44,3 +44,21 @@ export default {
 </script>
 
 ```
+
+## Available props
+
+| Prop                          | Type            | Default     | Description            |
+|-------------------------------|-----------------|-------------|------------------------|
+| client-id                     | String          |             | line client id         |
+| client-secret                 | String          |             | line client secret     |
+| callback-uri                  | String          |             | line redirect uri      |
+| add-friend                    | Boolean         | false       | Show Add Friend        |
+| friend-required               | Boolean         | false       | Fail if you do not add friends|
+| login-text                    | String          | LINEでログイン|                       |
+|friend-error-text              | String          | 友達に追加してください| Error text when not added to a friend |
+
+## Events
+
+| Event                       | Output            | Description                          |
+|-----------------------------|-------------------|--------------------------------------|
+| result                      | result            | Object such as line access token     |
