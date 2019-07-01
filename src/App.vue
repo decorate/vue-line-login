@@ -2,6 +2,7 @@
   <div id="app">
       <line-login-button
               client-id="1592791378"
+              client-secret="d533452cc07fa8795f5fffa86eb49479"
               callback-uri="http://localhost:8081"
               @result="result"
               add-friend

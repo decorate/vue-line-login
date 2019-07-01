@@ -30,6 +30,11 @@
                 require: true
             },
 
+            clientSecret: {
+                type: String,
+                require: true
+            },
+
             callbackUri: {
                 type: String,
                 require: true
@@ -97,7 +102,12 @@
             },
 
             async getToken(code) {
-                const result = new OAuthRequest({code: code})
+                const result = new OAuthRequest({
+                    code: code,
+                    clientId: this.clientId,
+                    clientSecret: this.clientSecret,
+                    redirectUri: this.callbackUri
+                })
                 const params = new URLSearchParams()
                 linq.from(result.getPostable()).select(x => params.append(x.key, x.value)).toArray()
 

@@ -20,6 +20,7 @@ With npm:
     <line-login-button 
     client-id="11111"
     callback-uri="http://localhost:8080"
+    client-secret="secret"
     @result="result" 
     add-friend 
     friend-required></line-login-button>

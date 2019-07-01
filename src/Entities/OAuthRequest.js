@@ -11,9 +11,9 @@ export default class OAuthRequest extends Model{
         this.fillable = FILLABLE
 
         this.grantType = 'authorization_code'
-        this.clientId = process.env.VUE_APP_LINE_CLIENT_ID
-        this.clientSecret = process.env.VUE_APP_LINE_CLIENT_SECRET
-        this.redirectUri = process.env.VUE_APP_LINE_CALLBACK_URL
+        this.clientId = ''
+        this.clientSecret = ''
+        this.redirectUri = ''
         this.code = ''
 
         this.data = data
