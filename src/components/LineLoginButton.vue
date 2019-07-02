@@ -196,7 +196,7 @@
         border-right: 1px solid rgba(0,0,0,0.2);
     }
     .fa-line {
-        background: url(https://d.line-scdn.net/r/web/social-plugin/img/common/line_v3.png) 2px 3px no-repeat;
+        background: url(https://d.line-scdn.net/r/web/social-plugin/img/common/line_v3.png) 3px 4px no-repeat;
         position: absolute;
         left: 0;
         top: 0;
@@ -207,6 +207,6 @@
         font-size: 1.6em;
         text-align: center;
         border-right: 1px solid rgba(0,0,0,0.2);
-        background-size: 28px 26px;
+        background-size: 26px 24px;
     }
 </style>
