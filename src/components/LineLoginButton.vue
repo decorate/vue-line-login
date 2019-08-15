@@ -2,7 +2,7 @@
     <div>
         <button class="btn btn-block btn-social btn-line" @click="login">
             <span class="fa fa-line"></span>
-            {{loginText}}
+            <span v-html="loginText"></span>
         </button>
         <span v-if="error" style="color: #dc3545; font-size: 80%;">{{error}}</span>
     </div>

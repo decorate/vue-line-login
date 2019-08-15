@@ -4,6 +4,7 @@
               :client-id="clientId"
               :client-secret="clientSecret"
               :callback-uri="callbackUri"
+              login-text="<span class='ok'>OK LINE</span>"
               @result="result"
               add-friend
               friend-required></line-login-button>
